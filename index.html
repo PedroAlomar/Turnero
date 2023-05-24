@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Ejemplo de Empresa - Sacar Turnos</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Ejemplo de Empresa - Sacar Turnos</h1>
+  </header>
+
+  <main>
+    <h2>Seleccionar turno</h2>
+    <form id="turnoForm">
+      <label for="name">Nombre:</label>
+      <input type="text" id="name" required>
+      
+      <label for="time">Hora:</label>
+      <select id="time" required>
+        <option value="9:00">9:00</option>
+        <option value="10:00">10:00</option>
+        <option value="11:00">11:00</option>
+        <!-- Agrega más opciones de horarios aquí -->
+      </select>
+      
+      <button type="submit">Guardar Reserva</button>
+    </form>
+    
+    <div id="message"></div>
+    
+    <h2>Listado de turnos</h2>
+    <ul id="turnoList"></ul>
+  </main>
+</body>
+</html>
